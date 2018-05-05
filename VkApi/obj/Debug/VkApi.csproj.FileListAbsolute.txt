@@ -1,0 +1,149 @@
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\VkApi.dll.config
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\VkApi.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\VkApi.pdb
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\libpuzzle.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\WebDriver.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\WebDriver.Support.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\log4net.dll
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\libpuzzle.pdb
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll.config
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\WebDriver.xml
+D:\Work\Task1\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Work\Task1\TestVkApi\VkApi\obj\Debug\VkApi.csproj.CoreCompileInputs.cache
+D:\Work\Task1\TestVkApi\VkApi\obj\Debug\VkApi.dll
+D:\Work\Task1\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Work\Task1\TestVkApi\VkApi\bin\Debug\Resources\geckodriver.exe
+D:\Work\TestVkApi\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Work\TestVkApi\VkApi\bin\Debug\Resources\geckodriver.exe
+D:\Work\TestVkApi\VkApi\bin\Debug\VkApi.dll.config
+D:\Work\TestVkApi\VkApi\bin\Debug\VkApi.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\VkApi.pdb
+D:\Work\TestVkApi\VkApi\bin\Debug\libpuzzle.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\WebDriver.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\log4net.dll
+D:\Work\TestVkApi\VkApi\bin\Debug\libpuzzle.pdb
+D:\Work\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Work\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll.config
+D:\Work\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Work\TestVkApi\VkApi\bin\Debug\WebDriver.xml
+D:\Work\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Work\TestVkApi\VkApi\obj\Debug\VkApi.csproj.CoreCompileInputs.cache
+D:\Work\TestVkApi\VkApi\obj\Debug\VkApi.dll
+D:\Work\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\Resources\geckodriver.exe
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\VkApi.dll.config
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\VkApi.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\VkApi.pdb
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\libpuzzle.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\WebDriver.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\log4net.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\libpuzzle.pdb
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\bin\Debug\WebDriver.xml
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\obj\Debug\VkApi.dll
+D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\Resources\geckodriver.exe
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\VkApi.dll.config
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\VkApi.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\VkApi.pdb
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\libpuzzle.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\System.ValueTuple.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\TechTalk.SpecFlow.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\WebDriver.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\log4net.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\libpuzzle.pdb
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.pdb
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.xml
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\bin\Debug\WebDriver.xml
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\obj\Debug\VkApi.dll
+D:\Student\Tasks\A1QA\Diplom\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\Resources\geckodriver.exe
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\VkApi.dll.config
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\VkApi.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\VkApi.pdb
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\libpuzzle.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\System.ValueTuple.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\TechTalk.SpecFlow.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\WebDriver.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\log4net.dll
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\libpuzzle.pdb
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.pdb
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.xml
+D:\Student\Diplom\TestVkApi\VkApi\bin\Debug\WebDriver.xml
+D:\Student\Diplom\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Student\Diplom\TestVkApi\VkApi\obj\Debug\VkApi.dll
+D:\Student\Diplom\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\Resources\geckodriver.exe
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\VkApi.dll.config
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\VkApi.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\VkApi.pdb
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\libpuzzle.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\System.ValueTuple.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\TechTalk.SpecFlow.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\WebDriver.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\log4net.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\libpuzzle.pdb
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.pdb
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\nunit.framework.xml
+D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\WebDriver.xml
+D:\Student\Diplom\diplom\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Student\Diplom\diplom\TestVkApi\VkApi\obj\Debug\VkApi.dll
+D:\Student\Diplom\diplom\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\VkApi.dll.config
+D:\Student\Diplom\diplom\VkApi\bin\Debug\VkApi.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\VkApi.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\libpuzzle.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\Newtonsoft.Json.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\nunit.framework.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\OnlinerTestDemo.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\System.ValueTuple.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\TechTalk.SpecFlow.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\WebDriver.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\log4net.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\libpuzzle.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\OnlinerTestDemo.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\Newtonsoft.Json.xml
+D:\Student\Diplom\diplom\VkApi\bin\Debug\nunit.framework.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\nunit.framework.xml
+D:\Student\Diplom\diplom\VkApi\bin\Debug\WebDriver.xml
+D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
+D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.dll
+D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.pdb
