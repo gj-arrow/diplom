@@ -14,16 +14,17 @@ namespace demo.framework
 {
     public class BrowserFactory : BaseEntity
     {
-        private const String DriverPath = "Smart/resources/";
+        private const String DriverPath = "Smart/bin/Debug/Resources/";
 
         /// <summary>
         /// setup webdriver. chromedriver is a default value
         /// </summary>
         /// <returns>driver</returns>
+        private static string _browserName = Environment.GetEnvironmentVariable("Browser");
         public static IWebDriver SetupBrowser()
         {
             var a = System.IO.Path.GetFullPath(DriverPath);
-            String browserName = Configuration.GetBrowser();
+            String browserName = string.IsNullOrEmpty(_browserName) ? Configuration.GetBrowser().ToLower() : _browserName.ToLower();
             if (browserName == "chrome")
             {
               return new ChromeDriver(System.IO.Path.GetFullPath(DriverPath));

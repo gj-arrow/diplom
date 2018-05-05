@@ -126,6 +126,8 @@ D:\Student\Diplom\diplom\TestVkApi\VkApi\bin\Debug\WebDriver.xml
 D:\Student\Diplom\diplom\TestVkApi\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
 D:\Student\Diplom\diplom\TestVkApi\VkApi\obj\Debug\VkApi.dll
 D:\Student\Diplom\diplom\TestVkApi\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\Resources\chromedriver.exe
+D:\Student\Diplom\diplom\VkApi\bin\Debug\Resources\geckodriver.exe
 D:\Student\Diplom\diplom\VkApi\bin\Debug\VkApi.dll.config
 D:\Student\Diplom\diplom\VkApi\bin\Debug\VkApi.dll
 D:\Student\Diplom\diplom\VkApi\bin\Debug\VkApi.pdb

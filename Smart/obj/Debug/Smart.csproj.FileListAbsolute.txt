@@ -148,6 +148,8 @@ D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.xml
 D:\Student\Diplom\diplom\TestVkApi\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
 D:\Student\Diplom\diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
 D:\Student\Diplom\diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
+D:\Student\Diplom\diplom\Smart\bin\Debug\Resources\chromedriver.exe
+D:\Student\Diplom\diplom\Smart\bin\Debug\Resources\geckodriver.exe
 D:\Student\Diplom\diplom\Smart\bin\Debug\OnlinerTestDemo.dll
 D:\Student\Diplom\diplom\Smart\bin\Debug\OnlinerTestDemo.pdb
 D:\Student\Diplom\diplom\Smart\bin\Debug\ImapX.dll
