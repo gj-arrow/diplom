@@ -102,14 +102,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\Selenium.Chrome.WebDriver.2.33\driver\chromedriver.exe">
-      <Link>Resources\chromedriver.exe</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\packages\Selenium.Firefox.WebDriver.0.19.1\driver\geckodriver.exe">
-      <Link>Resources\geckodriver.exe</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="lib\ImapX.dll" />
     <Content Include="lib\log4net.dll" />
     <Content Include="lib\nunit-console-runner.dll" />
@@ -122,6 +114,8 @@
     <Content Include="lib\System.configuration.dll" />
     <Content Include="lib\System.IO.Log.dll" />
     <Content Include="lib\ThoughtWorks.Selenium.Core.dll" />
+    <Content Include="Resources\chromedriver.exe" />
+    <Content Include="Resources\geckodriver.exe" />
     <Content Include="Resources\run.xml" />
   </ItemGroup>
   <ItemGroup>

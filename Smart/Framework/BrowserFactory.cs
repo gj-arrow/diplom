@@ -14,7 +14,7 @@ namespace demo.framework
 {
     public class BrowserFactory : BaseEntity
     {
-        private const String DriverPath = "resources/";
+        private const String DriverPath = "Smart/resources/";
 
         /// <summary>
         /// setup webdriver. chromedriver is a default value
