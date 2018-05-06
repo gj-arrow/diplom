@@ -149,3 +149,5 @@ D:\Student\Diplom\diplom\VkApi\bin\Debug\WebDriver.xml
 D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.csprojResolveAssemblyReference.cache
 D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.dll
 D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\SikuliSharp.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\SikuliSharp.pdb

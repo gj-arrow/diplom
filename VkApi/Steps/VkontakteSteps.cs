@@ -9,6 +9,7 @@ using LibPuzzle;
 using NUnit.Framework;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
+using TestVkApi.Forms;
 using VkApi.Enumerables;
 using VkApi.Forms;
 using VkApi.Utils;
@@ -28,10 +29,14 @@ namespace VkApi.Steps
         public VkApiUtils vkApiUtils;
         public MainForm mainF;
         public Dictionary<string, string> photoInfo;
+        private FriendsForm friendsForm;
+        private SikuliActions sikuliActions = new SikuliActions();
+
+
         [After()]
         public void After()
         {
-            Browser.GetDriver().Close();
+            Browser.GetDriver().Quit();
         }
 
         [Before()]
@@ -77,11 +82,11 @@ namespace VkApi.Steps
             newsF.ClickProfileMenuBtn();
         }
 
-        [When(@"I navigate to main page")]
-        public void WhenINavigateToMainPage()
+        [When(@"I navigate to '(.*)'")]
+        public void WhenINavigateToMainPage(string item)
         {
             newsF = new NewsForm();
-            newsF.ClickMyPageBtn();
+            newsF.sideMenu.NavigateToMenuItem(item);
         }
 
         [When(@"Create post with randomly generated text on the wall and get the record id from the response")]
@@ -192,5 +197,48 @@ namespace VkApi.Steps
             vkApiUtils.DeletePhotoFromSite(MethodEnum.PHOTOS_DELETE.GetStringMapping(), _userId, photoInfo["photoId"], _token);
             mainF.DeletePhotoDownloadedFromVk(_pathToFolderResources, ScenarioContext.Current.Get<String>("downloadedFileName"));
         }
+
+        [When(@"click to Extended configuration")]
+        public void WhenClickToExtendedConfiguration()
+        {
+            friendsForm = new FriendsForm();
+            friendsForm.ClickToExtendedConfiguration();
+        }
+
+        [When(@"select '(.*)' region")]
+        public void WhenSelectRegion(string region)
+        {
+            friendsForm.SelectRegion(region);
+        }
+
+        [When(@"enter the '(.*)' name of person")]
+        public void WhenEnterTheNameOfPerson(string name)
+        {
+            friendsForm.EnterNameForSearch(name);
+        }
+
+        [Then(@"all persons should have '(.*)' name")]
+        public void ThenAllPersonsShouldHaveName(string p0)
+        {
+            Thread.Sleep(1000);
+        }
+
+        [When(@"click to user according existing photo '(.*)'")]
+        public void WhenClickToUserAccordingExistingPhoto(string photo)
+        {
+            sikuliActions.Click(photo);
+        }
+
+        [Then(@"the user must be true")]
+        public void ThenTheUserMustBeTrue()
+        {
+            Thread.Sleep(3000);
+        }
+
+
+
+
+
+
     }
 }

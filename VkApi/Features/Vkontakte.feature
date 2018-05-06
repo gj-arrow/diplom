@@ -32,7 +32,7 @@ Scenario: Main test
 		And I click button 'Войти' 
 			Then I move to user profile page
 
-		When I navigate to main page
+		When I navigate to 'Моя Страница'
 		And Create post with randomly generated text on the wall and get the record id from the response
 			Then Not updating the page, post exist on the wall with the right text from the right user
 
@@ -51,3 +51,28 @@ Scenario: Main test
 
 		When I click profile menu
 		And I click button 'Выйти'
+
+Scenario Outline: Serach person
+	Given I navigate to site
+
+		When I enter 'autoperftester@gmail.com' login and 'PuV6j_.2&amp;$m9h?UY' password
+		And I click button 'Войти' 
+			Then I move to user profile page
+
+		When I navigate to 'Друзья'
+		And click to Extended configuration
+		And select '<Country>' region
+		And enter the '<Name>' name of person
+			Then all persons should have '<Name>' name
+
+		When click to user according existing photo '<PhotoName>'
+			Then the user must be true
+		
+		When I click profile menu
+		And I click button 'Выйти'
+
+Examples:
+| PhotoName | Country  | Name             |
+| sasha.jpg | Беларусь | Ховрин Александр |
+
+

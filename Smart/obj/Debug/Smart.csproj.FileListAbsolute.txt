@@ -169,3 +169,4 @@ D:\Student\Diplom\diplom\Smart\bin\Debug\WebDriver.xml
 D:\Student\Diplom\diplom\Smart\bin\Debug\WebDriver.Support.xml
 D:\Student\Diplom\diplom\Smart\obj\Debug\OnlinerTestDemo.dll
 D:\Student\Diplom\diplom\Smart\obj\Debug\OnlinerTestDemo.pdb
+D:\Student\Diplom\diplom\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache

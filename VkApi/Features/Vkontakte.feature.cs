@@ -128,7 +128,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 33
    testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 35
-  testRunner.When("I navigate to main page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 36
   testRunner.And("Create post with randomly generated text on the wall and get the record id from t" +
                     "he response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -158,6 +158,44 @@ this.ScenarioSetup(scenarioInfo);
 #line 52
   testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 53
+  testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Serach person")]
+        [NUnit.Framework.TestCaseAttribute("sasha.jpg", "Беларусь", "Ховрин Александр", null)]
+        public virtual void SerachPerson(string photoName, string country, string name, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serach person", exampleTags);
+#line 55
+this.ScenarioSetup(scenarioInfo);
+#line 56
+ testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 58
+  testRunner.When("I enter \'autoperftester@gmail.com\' login and \'PuV6j_.2&amp;$m9h?UY\' password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 59
+  testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 60
+   testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 62
+  testRunner.When("I navigate to \'Друзья\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 63
+  testRunner.And("click to Extended configuration", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 64
+  testRunner.And(string.Format("select \'{0}\' region", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 65
+  testRunner.And(string.Format("enter the \'{0}\' name of person", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 66
+   testRunner.Then(string.Format("all persons should have \'{0}\' name", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 68
+  testRunner.When(string.Format("click to user according existing photo \'{0}\'", photoName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 69
+   testRunner.Then("the user must be true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 71
+  testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 72
   testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
