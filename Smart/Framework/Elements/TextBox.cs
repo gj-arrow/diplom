@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using demo.framework.Elements;
+using System.Threading;
 
 namespace demo.framework.Elements
 {
@@ -24,8 +25,16 @@ namespace demo.framework.Elements
         {
             WaitForElementPresent();
             GetElement().Click();
+            Thread.Sleep(500);
             GetElement().SendKeys(Keys.Enter);
             Log.Info(String.Format("{0} :: set Enter", GetName()));
+        }
+
+        public void Clear()
+        {
+            WaitForElementPresent();
+            GetElement().Clear();
+            Log.Info(String.Format("{0} :: Clear textBox", GetName()));
         }
     }
 }

@@ -26,7 +26,10 @@ namespace VkApi.Steps
         private const int LenghtMessage = 15;
         public LoginForm loginF;
         public NewsForm newsF;
+        public EditIntrestsInfo editIntrestsInfo;
+        public EditContactInfo editContactInfo;
         public VkApiUtils vkApiUtils;
+        public EditMainInfo editMainInfo;
         public MainForm mainF;
         public Dictionary<string, string> photoInfo;
         private FriendsForm friendsForm;
@@ -235,9 +238,115 @@ namespace VkApi.Steps
             Thread.Sleep(3000);
         }
 
+        [When(@"I click edit info about user button")]
+        public void WhenIClickEditInfoAboutUserButton()
+        {
+            mainF = new MainForm();
+            mainF.ClickEditInfo();
+        }
+
+        [When(@"navigate to '(.*)' from right menu")]
+        public void WhenNavigateToFromRightMenu(string item)
+        {
+            editMainInfo = new EditMainInfo();
+            editMainInfo.rightMenu.NavigateToMenuItem(item);
+        }
+
+        [When(@"(fill|clear) info about (Intrests|Main|Contacts|Study|Carrier|Army|LivePosition) in fields and save this changing")]
+        public void WhenFillInfoInFiledsAndSaveThisChanging(string mode, string tab)
+        {
+            Thread.Sleep(1000);
+            if (mode == "fill")
+            {
+                switch (tab)
+                {
+                    case "Intrests":
+                        {
+                            editIntrestsInfo = new EditIntrestsInfo();
+                            editIntrestsInfo.FillInfoUser("test");
+                        }
+                        break;
+                    case "Main":
+                        {
+                            editMainInfo = new EditMainInfo();
+                            editMainInfo.FillInfoUser("test");
+                        }
+                        break;
+                    case "Contacts":
+                        {
+                            editContactInfo = new EditContactInfo();
+                            editContactInfo.FillInfoUser("test");
+                        }
+                        break;
+                    case "Study":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    case "Carrier":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    case "Army":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    case "LivePosition":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    default: break;
+                }
+
+            }
+            else
+            {
+                switch (tab)
+                {
+                    case "Intrests":
+                        {
+                            editIntrestsInfo = new EditIntrestsInfo();
+                            editIntrestsInfo.FillInfoUser(""); }
+                        break;
+                    case "Main":
+                        {
+                            editMainInfo = new EditMainInfo();
+                            editMainInfo.FillInfoUser("");
+                        }
+                        break;
+                    case "Contacts":
+                        {
+                            editContactInfo = new EditContactInfo();
+                            editContactInfo.FillInfoUser("test");
+                        }
+                        break;
+                    case "Study":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    case "Carrier":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    case "Army":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    case "LivePosition":
+                        { editIntrestsInfo.FillInfoUser("test"); }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            Thread.Sleep(2000);
+        }
+
+        [When(@"click show full information button")]
+        public void WhenClickShowFullInformationButton()
+        {
+            mainF = new MainForm();
+            mainF.ClickShowFullInfo();
+        }
 
 
-
+        [Then(@"all info (Intrests|Main|Contacts|Study|Carrier|Army|LivePosition) equals true info")]
+        public void ThenAllInfoEqualsTrueInfo(string value)
+        {
+            Thread.Sleep(2000);
+        }
 
 
     }

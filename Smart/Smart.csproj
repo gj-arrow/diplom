@@ -92,6 +92,7 @@
     <Compile Include="Framework\Elements\BaseElement.cs" />
     <Compile Include="Framework\Elements\Button.cs" />
     <Compile Include="Framework\Elements\Link.cs" />
+    <Compile Include="Framework\Elements\SelectElement.cs" />
     <Compile Include="Framework\Elements\TextBox.cs" />
     <Compile Include="Framework\Forms\BaseForm.cs" />
     <Compile Include="Framework\Logger.cs" />

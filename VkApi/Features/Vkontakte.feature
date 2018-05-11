@@ -1,31 +1,20 @@
-﻿	Feature: Vkontakte
+﻿Feature: Vkontakte
 
-Scenario: User log in
-	Given I navigate to site
-
-		When I enter 'autoperftester@gmail.com' login and 'PuV6j_.2&amp;$m9h?UY' password
-		And I click button 'Войти' 
-
-			Then I move to user profile page
-
-		When I click profile menu
-		And I click button 'Выйти'
-			Then I move to first page
-
-Scenario Outline: User log in (Negative)
+Scenario Outline: User log in 
 	Given I navigate to site
 		When I enter '<Login>' login and '<Password>' password
 		And I click button 'Войти' 
 			Then I stay on the page with '<NameOfTitle>' title
 Examples:
-| Password                                    | Login             | NameOfTitle      |
-|                                             |                   | Добро пожаловать |
-| 1qwawerxtcy                                 |                   | Добро пожаловать |
-|                                             | trhfdgchbjk       | Добро пожаловать |
-| dfxcgfghlhkgfxbfcngvhbvvjcfxfxhxgfxgxhgfxhf | hghkfhfyf76of8fff | Вход             |
-| hghkfhfyf76of8fff                           | hghkfhfyf76of8fff | Вход             |
+| NameOfTitle         | Password                                    | Login                    |
+| Добро пожаловать    |                                             |                          |
+| Добро пожаловать    | 1qwawerxtcy                                 |                          |
+| Добро пожаловать    |                                             | trhfdgchbjk              |
+| Вход                | dfxcgfghlhkgfxbfcngvhbvvjcfxfxhxgfxgxhgfxhf | hghkfhfyf76of8fff        |
+| Вход                | hghkfhfyf76of8fff                           | hghkfhfyf76of8fff        |
+| Тестировщик Отбогов | PuV6j_.2&amp;$m9h?UY                        | autoperftester@gmail.com |
 
-Scenario: Main test
+Scenario: Add and Edit post with attach uploaded image through api
 	Given I navigate to site
 
 		When I enter 'autoperftester@gmail.com' login and 'PuV6j_.2&amp;$m9h?UY' password
@@ -52,7 +41,7 @@ Scenario: Main test
 		When I click profile menu
 		And I click button 'Выйти'
 
-Scenario Outline: Serach person
+Scenario Outline: Serach user
 	Given I navigate to site
 
 		When I enter 'autoperftester@gmail.com' login and 'PuV6j_.2&amp;$m9h?UY' password
@@ -75,4 +64,89 @@ Examples:
 | PhotoName | Country  | Name             |
 | sasha.jpg | Беларусь | Ховрин Александр |
 
+Scenario Outline: Add interests of user
+	Given I navigate to site
 
+		When I enter '<Login>' login and '<Password>' password
+		And I click button 'Войти' 
+			Then I move to user profile page
+		When I navigate to 'Моя Страница'
+		When I click edit info about user button
+		And navigate to 'Интересы' from right menu
+		And fill info about Intrests in fields and save this changing
+
+		When I navigate to 'Моя Страница'
+		And click show full information button 
+			Then all info Intrests equals true info
+
+		When I click edit info about user button
+		And navigate to 'Интересы' from right menu
+		And clear info about Intrests in fields and save this changing
+
+		When I navigate to 'Моя Страница'
+		And click show full information button 
+			Then all info Intrests equals true info
+		When I click profile menu
+		And I click button 'Выйти'
+
+Examples:
+| Password             | Login                    |
+| PuV6j_.2&amp;$m9h?UY | autoperftester@gmail.com |
+
+Scenario Outline: Add main info of user
+	Given I navigate to site
+
+		When I enter '<Login>' login and '<Password>' password
+		And I click button 'Войти' 
+			Then I move to user profile page
+		When I navigate to 'Моя Страница'
+		When I click edit info about user button
+		And navigate to 'Основное' from right menu
+		And fill info about Main in fields and save this changing
+
+		When I navigate to 'Моя Страница'
+		And click show full information button 
+			Then all info Main equals true info
+
+		When I click edit info about user button
+		And navigate to 'Основное' from right menu
+		And clear info about Main in fields and save this changing
+
+		When I navigate to 'Моя Страница'
+		And click show full information button 
+			Then all info Main equals true info
+		When I click profile menu
+		And I click button 'Выйти'
+
+Examples:
+| Password             | Login                    |
+| PuV6j_.2&amp;$m9h?UY | autoperftester@gmail.com |
+
+Scenario Outline: Add contact info of user
+	Given I navigate to site
+
+		When I enter '<Login>' login and '<Password>' password
+		And I click button 'Войти' 
+			Then I move to user profile page
+		When I navigate to 'Моя Страница'
+		When I click edit info about user button
+		And navigate to 'Контакты' from right menu
+		And fill info about Contacts in fields and save this changing
+
+		When I navigate to 'Моя Страница'
+		And click show full information button 
+			Then all info Contacts equals true info
+
+		When I click edit info about user button
+		And navigate to 'Контакты' from right menu
+		And clear info about Contacts in fields and save this changing
+
+		When I navigate to 'Моя Страница'
+		And click show full information button 
+			Then all info Contacts equals true info
+		When I click profile menu
+		And I click button 'Выйти'
+
+Examples:
+| Password             | Login                    |
+| PuV6j_.2&amp;$m9h?UY | autoperftester@gmail.com |

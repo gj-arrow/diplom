@@ -65,137 +65,263 @@ namespace VkApi.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("User log in")]
-        public virtual void UserLogIn()
+        [NUnit.Framework.TestCaseAttribute("Добро пожаловать", "", "", null)]
+        [NUnit.Framework.TestCaseAttribute("Добро пожаловать", "1qwawerxtcy", "", null)]
+        [NUnit.Framework.TestCaseAttribute("Добро пожаловать", "", "trhfdgchbjk", null)]
+        [NUnit.Framework.TestCaseAttribute("Вход", "dfxcgfghlhkgfxbfcngvhbvvjcfxfxhxgfxgxhgfxhf", "hghkfhfyf76of8fff", null)]
+        [NUnit.Framework.TestCaseAttribute("Вход", "hghkfhfyf76of8fff", "hghkfhfyf76of8fff", null)]
+        [NUnit.Framework.TestCaseAttribute("Тестировщик Отбогов", "PuV6j_.2&amp;$m9h?UY", "autoperftester@gmail.com", null)]
+        public virtual void UserLogIn(string nameOfTitle, string password, string login, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User log in", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User log in", exampleTags);
 #line 3
 this.ScenarioSetup(scenarioInfo);
 #line 4
  testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
-  testRunner.When("I enter \'autoperftester@gmail.com\' login and \'PuV6j_.2&amp;$m9h?UY\' password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
-  testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 9
-   testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 11
-  testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
-  testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 13
-   testRunner.Then("I move to first page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User log in (Negative)")]
-        [NUnit.Framework.TestCaseAttribute("", "", "Добро пожаловать", null)]
-        [NUnit.Framework.TestCaseAttribute("1qwawerxtcy", "", "Добро пожаловать", null)]
-        [NUnit.Framework.TestCaseAttribute("", "trhfdgchbjk", "Добро пожаловать", null)]
-        [NUnit.Framework.TestCaseAttribute("dfxcgfghlhkgfxbfcngvhbvvjcfxfxhxgfxgxhgfxhf", "hghkfhfyf76of8fff", "Вход", null)]
-        [NUnit.Framework.TestCaseAttribute("hghkfhfyf76of8fff", "hghkfhfyf76of8fff", "Вход", null)]
-        public virtual void UserLogInNegative(string password, string login, string nameOfTitle, string[] exampleTags)
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User log in (Negative)", exampleTags);
-#line 15
-this.ScenarioSetup(scenarioInfo);
-#line 16
- testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
+#line 5
   testRunner.When(string.Format("I enter \'{0}\' login and \'{1}\' password", login, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
+#line 6
   testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 19
+#line 7
    testRunner.Then(string.Format("I stay on the page with \'{0}\' title", nameOfTitle), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Main test")]
-        public virtual void MainTest()
+        [NUnit.Framework.DescriptionAttribute("Add and Edit post with attach uploaded image through api")]
+        public virtual void AddAndEditPostWithAttachUploadedImageThroughApi()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Main test", ((string[])(null)));
-#line 28
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add and Edit post with attach uploaded image through api", ((string[])(null)));
+#line 17
 this.ScenarioSetup(scenarioInfo);
-#line 29
+#line 18
  testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 31
+#line 20
   testRunner.When("I enter \'autoperftester@gmail.com\' login and \'PuV6j_.2&amp;$m9h?UY\' password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 32
+#line 21
   testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 33
+#line 22
    testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 35
+#line 24
   testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
+#line 25
   testRunner.And("Create post with randomly generated text on the wall and get the record id from t" +
                     "he response", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 37
+#line 26
    testRunner.Then("Not updating the page, post exist on the wall with the right text from the right " +
                     "user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 39
+#line 28
   testRunner.When("Change the text and add picture the post through the API request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 40
+#line 29
    testRunner.Then("Without updating the page, message should be changed and the uploaded image shoul" +
                     "d be added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 42
+#line 31
   testRunner.When("Using the API request, add a comment to the post with random text", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 43
+#line 32
    testRunner.Then("Not updating the page,comment from the right user should be added to the correct " +
                     "post", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 45
+#line 34
   testRunner.When("Add Like for the record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 46
+#line 35
    testRunner.Then("Through the request to the API, Like should be sent from the right user", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 48
+#line 37
   testRunner.When("delete the created record", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 49
+#line 38
    testRunner.Then("Not updating the page, the entry should be deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 50
+#line 39
    testRunner.And("Delete created info by test", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 52
+#line 41
   testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 53
+#line 42
   testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Serach person")]
+        [NUnit.Framework.DescriptionAttribute("Serach user")]
         [NUnit.Framework.TestCaseAttribute("sasha.jpg", "Беларусь", "Ховрин Александр", null)]
-        public virtual void SerachPerson(string photoName, string country, string name, string[] exampleTags)
+        public virtual void SerachUser(string photoName, string country, string name, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serach person", exampleTags);
-#line 55
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Serach user", exampleTags);
+#line 44
 this.ScenarioSetup(scenarioInfo);
-#line 56
+#line 45
  testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 58
+#line 47
   testRunner.When("I enter \'autoperftester@gmail.com\' login and \'PuV6j_.2&amp;$m9h?UY\' password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 59
+#line 48
   testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 60
+#line 49
    testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 62
+#line 51
   testRunner.When("I navigate to \'Друзья\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 63
+#line 52
   testRunner.And("click to Extended configuration", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 64
+#line 53
   testRunner.And(string.Format("select \'{0}\' region", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 65
+#line 54
   testRunner.And(string.Format("enter the \'{0}\' name of person", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 66
+#line 55
    testRunner.Then(string.Format("all persons should have \'{0}\' name", name), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 68
+#line 57
   testRunner.When(string.Format("click to user according existing photo \'{0}\'", photoName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 69
+#line 58
    testRunner.Then("the user must be true", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 71
+#line 60
   testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 61
+  testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add interests of user")]
+        [NUnit.Framework.TestCaseAttribute("PuV6j_.2&amp;$m9h?UY", "autoperftester@gmail.com", null)]
+        public virtual void AddInterestsOfUser(string password, string login, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add interests of user", exampleTags);
+#line 67
+this.ScenarioSetup(scenarioInfo);
+#line 68
+ testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 70
+  testRunner.When(string.Format("I enter \'{0}\' login and \'{1}\' password", login, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 71
+  testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 72
+   testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 73
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 74
+  testRunner.When("I click edit info about user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 75
+  testRunner.And("navigate to \'Интересы\' from right menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 76
+  testRunner.And("fill info about Intrests in fields and save this changing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 78
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 79
+  testRunner.And("click show full information button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 80
+   testRunner.Then("all info Intrests equals true info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 82
+  testRunner.When("I click edit info about user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 83
+  testRunner.And("navigate to \'Интересы\' from right menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 84
+  testRunner.And("clear info about Intrests in fields and save this changing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 86
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 87
+  testRunner.And("click show full information button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 88
+   testRunner.Then("all info Intrests equals true info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 89
+  testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 90
+  testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add main info of user")]
+        [NUnit.Framework.TestCaseAttribute("PuV6j_.2&amp;$m9h?UY", "autoperftester@gmail.com", null)]
+        public virtual void AddMainInfoOfUser(string password, string login, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add main info of user", exampleTags);
+#line 96
+this.ScenarioSetup(scenarioInfo);
+#line 97
+ testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 99
+  testRunner.When(string.Format("I enter \'{0}\' login and \'{1}\' password", login, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 100
+  testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 101
+   testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 102
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 103
+  testRunner.When("I click edit info about user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 104
+  testRunner.And("navigate to \'Основное\' from right menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 105
+  testRunner.And("fill info about Main in fields and save this changing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 107
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 108
+  testRunner.And("click show full information button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 109
+   testRunner.Then("all info Main equals true info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 111
+  testRunner.When("I click edit info about user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 112
+  testRunner.And("navigate to \'Основное\' from right menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 113
+  testRunner.And("clear info about Main in fields and save this changing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 115
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 116
+  testRunner.And("click show full information button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 117
+   testRunner.Then("all info Main equals true info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 118
+  testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 119
+  testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add contact info of user")]
+        [NUnit.Framework.TestCaseAttribute("PuV6j_.2&amp;$m9h?UY", "autoperftester@gmail.com", null)]
+        public virtual void AddContactInfoOfUser(string password, string login, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add contact info of user", exampleTags);
+#line 125
+this.ScenarioSetup(scenarioInfo);
+#line 126
+ testRunner.Given("I navigate to site", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 128
+  testRunner.When(string.Format("I enter \'{0}\' login and \'{1}\' password", login, password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 129
+  testRunner.And("I click button \'Войти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 130
+   testRunner.Then("I move to user profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 131
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 132
+  testRunner.When("I click edit info about user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 133
+  testRunner.And("navigate to \'Контакты\' from right menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 134
+  testRunner.And("fill info about Contacts in fields and save this changing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 136
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 137
+  testRunner.And("click show full information button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 138
+   testRunner.Then("all info Contacts equals true info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 140
+  testRunner.When("I click edit info about user button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 141
+  testRunner.And("navigate to \'Контакты\' from right menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 142
+  testRunner.And("clear info about Contacts in fields and save this changing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 144
+  testRunner.When("I navigate to \'Моя Страница\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 145
+  testRunner.And("click show full information button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 146
+   testRunner.Then("all info Contacts equals true info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 147
+  testRunner.When("I click profile menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 148
   testRunner.And("I click button \'Выйти\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

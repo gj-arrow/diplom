@@ -18,6 +18,8 @@ namespace VkApi.Forms
         private TextBox _txbCommentWall;
         private TextBox _txbWallPostComment;
         private Button _btnLikeWalPost;
+        private Button _btnShowFullInfo = new Button(By.XPath("//div[@id='profile_short']//span[contains(@class,'profile_label_more')]"), "Show full info button");
+        private Button _btnEditInfo = new Button(By.XPath("//*[@id='profile_edit_act']"), "Edit button");
         private readonly TextBox _txbPageBlock = 
             new TextBox(By.XPath("//div[@id='profile_wall']/div[contains(@class,('page_block'))]"), "Page Block Wall" );
         private string _namePhotoDownloaded = "";
@@ -41,6 +43,17 @@ namespace VkApi.Forms
                 _btnLikeWalPost.Click();
             }
         }
+
+        public void ClickEditInfo()
+        {
+            _btnEditInfo.ClickAndWait();
+        }
+
+        public void ClickShowFullInfo()
+        {
+            _btnShowFullInfo.Click();
+        }
+
 
         public bool IsWallPostUser(string userId, string wallPostMessage)
         {

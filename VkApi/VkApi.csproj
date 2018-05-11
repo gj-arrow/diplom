@@ -73,11 +73,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Vkontakte.feature</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditContactInfo.cs" />
+    <Compile Include="Forms\EditIntrestsInfo.cs" />
+    <Compile Include="Forms\EditMainInfo.cs" />
     <Compile Include="Forms\FriendsForm.cs" />
     <Compile Include="Forms\LoginForm.cs" />
     <Compile Include="Forms\MainForm.cs" />
     <Compile Include="Forms\NewsForm.cs" />
-    <Compile Include="Forms\SideMenu.cs" />
+    <Compile Include="Menu\EditInfoMenu.cs" />
+    <Compile Include="Menu\SideMenu.cs" />
     <Compile Include="Forms\SikuliActions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\VkontakteSteps.cs" />

@@ -25,3 +25,4 @@ D:\Student\Diplom\diplom\SikuliSharp\bin\Debug\SikuliSharp.dll
 D:\Student\Diplom\diplom\SikuliSharp\bin\Debug\SikuliSharp.pdb
 D:\Student\Diplom\diplom\SikuliSharp\obj\Debug\SikuliSharp.dll
 D:\Student\Diplom\diplom\SikuliSharp\obj\Debug\SikuliSharp.pdb
+D:\Student\Diplom\diplom\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache

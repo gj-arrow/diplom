@@ -151,3 +151,5 @@ D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.dll
 D:\Student\Diplom\diplom\VkApi\obj\Debug\VkApi.pdb
 D:\Student\Diplom\diplom\VkApi\bin\Debug\SikuliSharp.dll
 D:\Student\Diplom\diplom\VkApi\bin\Debug\SikuliSharp.pdb
+D:\Student\Diplom\diplom\VkApi\bin\Debug\WebDriver.Support.dll
+D:\Student\Diplom\diplom\VkApi\bin\Debug\WebDriver.Support.xml
