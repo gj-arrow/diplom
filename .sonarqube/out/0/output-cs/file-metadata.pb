@@ -1,0 +1,15 @@
+6
+4D:\Other\diplom-master\Smart\Framework\BaseEntity.cs3
+1D:\Other\diplom-master\Smart\Framework\Browser.cs:
+8D:\Other\diplom-master\Smart\Framework\BrowserFactory.cs9
+7D:\Other\diplom-master\Smart\Framework\Configuration.cs@
+>D:\Other\diplom-master\Smart\Framework\Elements\BaseElement.cs;
+9D:\Other\diplom-master\Smart\Framework\Elements\Button.cs9
+7D:\Other\diplom-master\Smart\Framework\Elements\Link.csB
+@D:\Other\diplom-master\Smart\Framework\Elements\SelectElement.cs<
+:D:\Other\diplom-master\Smart\Framework\Elements\TextBox.cs:
+8D:\Other\diplom-master\Smart\Framework\Forms\BaseForm.cs2
+0D:\Other\diplom-master\Smart\Framework\Logger.cs;
+9D:\Other\diplom-master\Smart\Framework\RunConfigurator.cs9
+7D:\Other\diplom-master\Smart\Properties\AssemblyInfo.cs[
+WC:\Users\a.hovrin\AppData\Local\Temp\.NETFramework,Version=v4.6.1.AssemblyAttributes.cs

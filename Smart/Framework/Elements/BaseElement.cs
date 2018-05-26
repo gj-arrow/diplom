@@ -12,7 +12,6 @@ namespace demo.framework.Elements
 {
     public abstract class BaseElement : BaseEntity
     {
-        private readonly RemoteWebElement _element;
         private readonly String _name;
         private readonly By _locator;
 

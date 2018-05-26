@@ -13,7 +13,6 @@ namespace VkApi.Forms
    public class FriendsForm : BaseForm
     {
         private readonly Link _linkExtendedConfiguration = new Link(By.XPath("//*[@id='friends_import_header']/a"), "Extended cofiguration  link");
-        private TextBox _linkRegion;
         private readonly TextBox _txbSearch = new TextBox(By.XPath("//*[@id='search_query']"), "Search element");
 
         public FriendsForm()
@@ -28,7 +27,7 @@ namespace VkApi.Forms
         public void SelectRegion(string region)
         {
             Thread.Sleep(1000);
-            _linkRegion = new TextBox(By.XPath("//div[@id='region_filter']//div[@id='cCountry']//tbody/tr/td[1]/input[1]"), "Extended cofiguration link");
+            var _linkRegion = new TextBox(By.XPath("//div[@id='region_filter']//div[@id='cCountry']//tbody/tr/td[1]/input[1]"), "Extended cofiguration link");
             _linkRegion.SetText(region);
             _linkRegion.SetEnter();
         }

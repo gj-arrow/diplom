@@ -16,8 +16,6 @@ namespace VkApi.Forms
     {
         private const string TemplateSelectLocator = "//input[@id='{0}']/preceding-sibling::input";
         private const string TemplateLiLocator = "//li[contains(text(), '{0}')]";
-        private readonly TextBox _txbFirstName = new TextBox(By.Id("pedit_first_name"), "First name");
-        private readonly TextBox _txbLastName = new TextBox(By.Id("pedit_last_name"), "Last name");
         private readonly TextBox _selectSex = new TextBox(By.XPath(string.Format(TemplateSelectLocator, "pedit_sex")), "sex");
         private readonly TextBox _selectStatus = new TextBox(By.XPath(string.Format(TemplateSelectLocator, "pedit_status")), "status");
         private readonly TextBox _selectBday = new TextBox(By.XPath(string.Format(TemplateSelectLocator, "pedit_bday")), "HB Day");
@@ -26,12 +24,11 @@ namespace VkApi.Forms
         private readonly TextBox _selectHBVisiblity = new TextBox(By.XPath(string.Format(TemplateSelectLocator, "pedit_bday_visibility")), "HB visibility");
         private readonly TextBox _txbTown = new TextBox(By.Id("pedit_home_town"), "Town");
         private readonly TextBox _selectLanguage = new TextBox(By.XPath(string.Format(TemplateSelectLocator, "pedit_langs")), "Languages");
-        private Button _btnSave;
 
         public EditInfoMenu rightMenu = new EditInfoMenu();
 
         public EditMainInfo()
-            : base(By.ClassName("page_block_header"), "Friends Page")
+            : base(By.ClassName("page_block_header"), "Edit Main Page")
         {
         }
 
@@ -57,7 +54,7 @@ namespace VkApi.Forms
                 _selectLanguage.ScrollToElement();
                 Thread.Sleep(500);
                
-                _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
+                var _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
                 if (_btnSave.IsDisplayed())
                 {
                     _btnSave.Click();
@@ -83,7 +80,7 @@ namespace VkApi.Forms
                 _selectLanguage.ScrollToElement();
                 Thread.Sleep(500);
 
-                _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
+                var _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
                 if (_btnSave.IsDisplayed())
                 {
                     _btnSave.Click();

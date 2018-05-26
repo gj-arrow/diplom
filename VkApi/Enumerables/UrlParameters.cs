@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-public enum ApiParametersEnum
+public enum ApiParameters
 {
     [Description("owner_id=")]
     OWNER_ID,

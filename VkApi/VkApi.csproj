@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit3TestAdapter.3.10.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.3.10.0\build\net35\NUnit3TestAdapter.props')" />
   <Import Project="..\packages\NUnit.3.10.1\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -73,8 +74,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Vkontakte.feature</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditLivePositionInfo.cs" />
     <Compile Include="Forms\EditContactInfo.cs" />
     <Compile Include="Forms\EditIntrestsInfo.cs" />
+    <Compile Include="Forms\EdiеArmyInfo.cs" />
+    <Compile Include="Forms\EdiеCarrierInfo.cs" />
+    <Compile Include="Forms\EditStudyInfo.cs" />
     <Compile Include="Forms\EditMainInfo.cs" />
     <Compile Include="Forms\FriendsForm.cs" />
     <Compile Include="Forms\LoginForm.cs" />
@@ -88,7 +93,6 @@
     <Compile Include="Utils\FormUtil.cs" />
     <Compile Include="Utils\RandomUtils.cs" />
     <Compile Include="Utils\VkApiUtils.cs" />
-    <Compile Include="VkApiTest\VkApiTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Features\Vkontakte.feature">
@@ -104,10 +108,6 @@
     <Content Include="Resources\image.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Libpuzzle\LibPuzzle.csproj">
-      <Project>{655e82d1-7247-4af2-aa9d-b28e688aebdb}</Project>
-      <Name>LibPuzzle</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SikuliSharp\SikuliSharp.csproj">
       <Project>{a4db5054-b4a1-4dcd-afc6-91efe9c25135}</Project>
       <Name>SikuliSharp</Name>
@@ -131,6 +131,7 @@
     <Error Condition="!Exists('..\packages\NUnit.3.10.1\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.10.1\build\NUnit.props'))" />
     <Error Condition="!Exists('..\packages\Selenium.Firefox.WebDriver.0.20.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Firefox.WebDriver.0.20.0\build\Selenium.Firefox.WebDriver.targets'))" />
     <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.38\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.38\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.3.10.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.3.10.0\build\net35\NUnit3TestAdapter.props'))" />
   </Target>
   <Import Project="..\packages\Selenium.Firefox.WebDriver.0.20.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.20.0\build\Selenium.Firefox.WebDriver.targets')" />
   <Import Project="..\packages\Selenium.Chrome.WebDriver.2.38\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.38\build\Selenium.Chrome.WebDriver.targets')" />

@@ -1,0 +1,14 @@
+=
+4D:\Other\diplom-master\Smart\Framework\BaseEntity.csutf-8:
+1D:\Other\diplom-master\Smart\Framework\Browser.csutf-8A
+8D:\Other\diplom-master\Smart\Framework\BrowserFactory.csutf-8@
+7D:\Other\diplom-master\Smart\Framework\Configuration.csutf-8G
+>D:\Other\diplom-master\Smart\Framework\Elements\BaseElement.csutf-8B
+9D:\Other\diplom-master\Smart\Framework\Elements\Button.csutf-8@
+7D:\Other\diplom-master\Smart\Framework\Elements\Link.csutf-8I
+@D:\Other\diplom-master\Smart\Framework\Elements\SelectElement.csutf-8C
+:D:\Other\diplom-master\Smart\Framework\Elements\TextBox.csutf-8A
+8D:\Other\diplom-master\Smart\Framework\Forms\BaseForm.csutf-89
+0D:\Other\diplom-master\Smart\Framework\Logger.csutf-8B
+9D:\Other\diplom-master\Smart\Framework\RunConfigurator.csutf-8@
+7D:\Other\diplom-master\Smart\Properties\AssemblyInfo.csutf-8

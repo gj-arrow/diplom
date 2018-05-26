@@ -2,7 +2,7 @@ using System.Configuration;
 
 namespace demo.framework {
     
-    public class Configuration {
+    public static class Configuration {
         //Settings
         private const string Timeout = "Timeout";
         private const string BaseUrl = "BaseUrl";
@@ -12,10 +12,6 @@ namespace demo.framework {
 
         private static string GetParameterValue(string key) {
             return ConfigurationManager.AppSettings.Get(key);
-        }
-
-        private static void SetParameterValue(string key, string value) {
-            ConfigurationManager.AppSettings.Set(key, value);
         }
 
         //============================================== Settings ====================================================

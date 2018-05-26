@@ -11,14 +11,14 @@ using VkApi.Enumerables;
 
 namespace VkApi.Utils
 {
-    public class VkApiUtils
+    public static class VkApiUtils
     {
-        private Dictionary<string, string> _responseDictionary = new Dictionary<string, string>();
-        private readonly Dictionary<string, string> _parameters = new Dictionary<string, string>();
+        private static Dictionary<string, string> _responseDictionary = new Dictionary<string, string>();
+        private static readonly Dictionary<string, string> Parameters = new Dictionary<string, string>();
         private const string Response = "response";
         private const string RegularFindResponse = @":\[?(\{?.+)\}\]?";
-        private string _boundary;
-        private HttpWebRequest _request;
+        private static string _boundary;
+        private static HttpWebRequest _request;
 
         private static string GenerateStringParameters(Dictionary<string, string> parameters)
         {
@@ -36,9 +36,9 @@ namespace VkApi.Utils
         return result;
         }
 
-        private Dictionary<string, string> SendApiRequest(string methodName, Dictionary<string, string> parameters)
+        private static Dictionary<string, string> SendApiRequest(string methodName, Dictionary<string, string> parameters)
         {
-            parameters.Add(ApiParametersEnum.VERSION.GetStringMapping(), "5.73");
+            parameters.Add(ApiParameters.VERSION.GetStringMapping(), "5.73");
             var responseDict = new Dictionary<string, string>();
             var stringParameters = GenerateStringParameters(parameters);
             var requestString = string.Format(Configuration.GetUrlApi(), methodName, stringParameters);
@@ -66,85 +66,84 @@ namespace VkApi.Utils
             }
         }
 
-        public string CreateWallPost(string userId, string method, string token, string wallMessage)
+        public static string CreateWallPost(string userId, string method, string token, string wallMessage)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.OWNER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.MESSAGE.GetStringMapping(), wallMessage);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.OWNER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.MESSAGE.GetStringMapping(), wallMessage);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
             return _responseDictionary["post_id"];
         }
 
-        public string AddPhotoInPostWithMessage(string method, string userId, string idPost, string token, string photoId, string wallMessage)
+        public static string AddPhotoInPostWithMessage(string method, string userId, string idPost, string token, string photoId, string wallMessage)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.OWNER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.MESSAGE.GetStringMapping(), wallMessage);
-            _parameters.Add(ApiParametersEnum.POST_ID.GetStringMapping(), idPost);
-            _parameters.Add(ApiParametersEnum.ATTACHMENTS.GetStringMapping(), "photo" + userId + "_" + photoId);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.OWNER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.MESSAGE.GetStringMapping(), wallMessage);
+            Parameters.Add(ApiParameters.POST_ID.GetStringMapping(), idPost);
+            Parameters.Add(ApiParameters.ATTACHMENTS.GetStringMapping(), "photo" + userId + "_" + photoId);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
             return wallMessage;
         }
 
-        public void ExecuteMessageActionWall(string userId, string idPost, string method, string token, string message)
+        public static void ExecuteMessageActionWall(string userId, string idPost, string method, string token, string message)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.OWNER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.POST_ID.GetStringMapping(), idPost);
-            _parameters.Add(ApiParametersEnum.MESSAGE.GetStringMapping(), message);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.OWNER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.POST_ID.GetStringMapping(), idPost);
+            Parameters.Add(ApiParameters.MESSAGE.GetStringMapping(), message);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
         }
 
-        public string GetUrlServerSite(string userId, string method, string token)
+        public static string GetUrlServerSite(string userId, string method, string token)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.GROUP_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-           // _parameters.Add(ApiParametersEnum.ALBUM_ID.GetStringMapping(), "246196437"); 
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.GROUP_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
             return _responseDictionary["upload_url"];
         }
 
-        public Dictionary<string, string> UploadPhotoOnServer(string userId, string method, string token, string server, string photo, string hash)
+        public static Dictionary<string, string> UploadPhotoOnServer(string userId, string method, string token, string server, string photo, string hash)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.OWNER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.GROUP_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.PHOTO.GetStringMapping(), photo);
-            _parameters.Add(ApiParametersEnum.SERVER.GetStringMapping(), server);
-            _parameters.Add(ApiParametersEnum.HASH.GetStringMapping(), hash);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.OWNER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.GROUP_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.PHOTO.GetStringMapping(), photo);
+            Parameters.Add(ApiParameters.SERVER.GetStringMapping(), server);
+            Parameters.Add(ApiParameters.HASH.GetStringMapping(), hash);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
             return _responseDictionary;
         }
 
-        public void DeleteWallPost(string userId, string idPost, string method, string token)
+        public static void DeleteWallPost(string userId, string idPost, string method, string token)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.OWNER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.POST_ID.GetStringMapping(), idPost);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.OWNER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.POST_ID.GetStringMapping(), idPost);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
         }
 
-        public bool IsUserLikePost(string userId, string idPost, string method, string type, string token)
+        public static bool IsUserLikePost(string userId, string idPost, string method, string type, string token)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.USER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.OWNER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.TYPE.GetStringMapping(), type);
-            _parameters.Add(ApiParametersEnum.ITEM_ID.GetStringMapping(), idPost);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.USER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.OWNER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.TYPE.GetStringMapping(), type);
+            Parameters.Add(ApiParameters.ITEM_ID.GetStringMapping(), idPost);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
             return Int32.Parse(_responseDictionary["liked"]) == 1;
         }
 
-        public Dictionary<string, string> AddPhotoWithMessage(string userId, string idPost, string method, string token, string pathToPhoto, string message)
+        public static Dictionary<string, string> AddPhotoWithMessage(string userId, string idPost, string method, string token, string pathToPhoto, string message)
         {
-            var urlServer = GetUrlServerSite(userId, MethodEnum.PHOTOS_GET_WALL_UPLOAD_SERVER.GetStringMapping(), token);
+            var urlServer = GetUrlServerSite(userId, VkMethodItems.PHOTOS_GET_WALL_UPLOAD_SERVER.GetStringMapping(), token);
             var infoPhoto = new Dictionary<string, string>();
             var pathToPhotoFull = Environment.CurrentDirectory + pathToPhoto;
             var responseUploadFiles = UploadFilesToRemoteUrl(urlServer, pathToPhotoFull);
@@ -156,16 +155,16 @@ namespace VkApi.Utils
             return infoPhoto;
         }
 
-        public void DeletePhotoFromSite(string method, string userId, string photoPid, string token)
+        public static void DeletePhotoFromSite(string method, string userId, string photoPid, string token)
         {
-            _parameters.Clear();
-            _parameters.Add(ApiParametersEnum.USER_ID.GetStringMapping(), userId);
-            _parameters.Add(ApiParametersEnum.PHOTO_ID.GetStringMapping(), photoPid);
-            _parameters.Add(ApiParametersEnum.ACCESS_TOKEN.GetStringMapping(), token);
-            _responseDictionary = SendApiRequest(method, _parameters);
+            Parameters.Clear();
+            Parameters.Add(ApiParameters.USER_ID.GetStringMapping(), userId);
+            Parameters.Add(ApiParameters.PHOTO_ID.GetStringMapping(), photoPid);
+            Parameters.Add(ApiParameters.ACCESS_TOKEN.GetStringMapping(), token);
+            _responseDictionary = SendApiRequest(method, Parameters);
         }
 
-        private Stream CreateHeaderRequest(string url, string file, NameValueCollection formFields = null)
+        private static Stream CreateHeaderRequest(string url, string file, NameValueCollection formFields = null)
         {
             _boundary = "----------------------------" + DateTime.Now.Ticks.ToString("x");
             _request = (HttpWebRequest)WebRequest.Create(url);
@@ -193,7 +192,7 @@ namespace VkApi.Utils
             return memStream;
         }
 
-        private HttpWebRequest CreateBodyRequest(Stream memStream, string file)
+        private static void CreateBodyRequest(Stream memStream, string file)
         {
             var endBoundaryBytes = Encoding.ASCII.GetBytes("\r\n--" + _boundary + "--");
             using (var fileStream = new FileStream(file, FileMode.Open, FileAccess.Read))
@@ -215,10 +214,9 @@ namespace VkApi.Utils
                 memStream.Close();
                 requestStream.Write(tempBuffer, 0, tempBuffer.Length);
             }
-            return _request;
         }
 
-        private Dictionary<string,string> GetResultRequest()
+        private static Dictionary<string,string> GetResultRequest()
         {
             using (var response = _request.GetResponse())
             {
@@ -229,7 +227,7 @@ namespace VkApi.Utils
             }
         }
 
-        public Dictionary<string, string> UploadFilesToRemoteUrl(string url, string file, NameValueCollection formFields = null)
+        public static Dictionary<string, string> UploadFilesToRemoteUrl(string url, string file, NameValueCollection formFields = null)
         {
             var memStream = CreateHeaderRequest(url, file, formFields);
             CreateBodyRequest(memStream, file);

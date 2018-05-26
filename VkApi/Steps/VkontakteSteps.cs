@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using demo.framework;
-using LibPuzzle;
 using NUnit.Framework;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
@@ -24,25 +23,18 @@ namespace VkApi.Steps
         private readonly string _photoOriginalName = RunConfigurator.GetValue("photoOriginalName");
         private readonly string _pathToFolderResources = RunConfigurator.GetValue("pathToFolderResources");
         private const int LenghtMessage = 15;
-        public LoginForm loginF;
-        public NewsForm newsF;
-        public EditIntrestsInfo editIntrestsInfo;
-        public EditContactInfo editContactInfo;
-        public VkApiUtils vkApiUtils;
-        public EditMainInfo editMainInfo;
-        public MainForm mainF;
-        public Dictionary<string, string> photoInfo;
-        private FriendsForm friendsForm;
-        private SikuliActions sikuliActions = new SikuliActions();
+        private Dictionary<string, string> photoInfo;
+        private MainForm mainF;
+        private readonly SikuliActions _sikuliActions = new SikuliActions();
 
 
-        [After()]
+        [After]
         public void After()
         {
             Browser.GetDriver().Quit();
         }
 
-        [Before()]
+        [Before]
         public void Before()
         {
             Browser.GetInstance();
@@ -54,12 +46,12 @@ namespace VkApi.Steps
         {
             Browser.GetDriver().Navigate().GoToUrl(Configuration.GetBaseUrl());
             Log.Step("Navigate to vk.com");
-            loginF = new LoginForm();
         }
 
         [When(@"I enter '(.*)' login and '(.*)' password")]
         public void WhenIEnteredLoginAndPassword(string login, string pass)
         {
+            var loginF = new LoginForm();
             Log.Step("Login");
             loginF.Login(login, pass);
         }
@@ -75,20 +67,20 @@ namespace VkApi.Steps
         {
             WebDriverWait Wait = new WebDriverWait(Browser.GetDriver(), TimeSpan.FromMilliseconds(Double.Parse(Configuration.GetTimeout())));
             Wait.Until(drv => drv.Title == "Новости");
-            Assert.AreEqual(Browser.GetDriver().Title,"Новости");
+            Assert.AreEqual("Новости", Browser.GetDriver().Title);
         }
 
         [When(@"I click profile menu")]
         public void WhenIClickProfileMenu()
         {
-            newsF = new NewsForm();
+            var newsF = new NewsForm();
             newsF.ClickProfileMenuBtn();
         }
 
         [When(@"I navigate to '(.*)'")]
         public void WhenINavigateToMainPage(string item)
         {
-            newsF = new NewsForm();
+            var newsF = new NewsForm();
             newsF.sideMenu.NavigateToMenuItem(item);
         }
 
@@ -96,10 +88,9 @@ namespace VkApi.Steps
         public void WhenReatePostWithRandomlyGeneratedTextOnTheWallAndGetTheRecordIdFromTheResponse()
         {
             Log.Step("Using the API request, create an post with randomly generated text on the wall and get the record id from the response");
-            vkApiUtils = new VkApiUtils();
             var messagePost = RandomUtils.RandomString(LenghtMessage);
             ScenarioContext.Current["messagePost"] = messagePost;
-            ScenarioContext.Current["idPost"] = vkApiUtils.CreateWallPost(_userId, MethodEnum.WALL_POST.GetStringMapping(), _token, messagePost);
+            ScenarioContext.Current["idPost"] = VkApiUtils.CreateWallPost(_userId, VkMethodItems.WALL_POST.GetStringMapping(), _token, messagePost);
         }
 
         [Then(@"Not updating the page, post exist on the wall with the right text from the right user")]
@@ -117,8 +108,8 @@ namespace VkApi.Steps
         {
             Log.Step("Edit the post through the API request - change the text and add (load) any picture.");
             ScenarioContext.Current["messageEditPost"] = RandomUtils.RandomString(LenghtMessage);
-            photoInfo = vkApiUtils.AddPhotoWithMessage(_userId, ScenarioContext.Current.Get<String>("idPost"),
-                MethodEnum.PHOTOS_SAVE_WALL_PHOTO.GetStringMapping(), _token, _pathToFolderResources + _photoOriginalName, ScenarioContext.Current.Get<String>("messageEditPost"));
+            photoInfo = VkApiUtils.AddPhotoWithMessage(_userId, ScenarioContext.Current.Get<String>("idPost"),
+                VkMethodItems.PHOTOS_SAVE_WALL_PHOTO.GetStringMapping(), _token, _pathToFolderResources + _photoOriginalName, ScenarioContext.Current.Get<String>("messageEditPost"));
         }
 
         [Then(@"Without updating the page, message should be changed and the uploaded image should be added")]
@@ -130,7 +121,7 @@ namespace VkApi.Steps
             var downloadedFileName = mainF.DownloadFile(_pathToFolderResources, photoInfo["photoId"]);
             ScenarioContext.Current["downloadedFileName"] = downloadedFileName;
             var similarityImages = mainF.ComparePhoto(_pathToFolderResources, _photoOriginalName, downloadedFileName);
-            Assert.IsTrue(similarityImages < IPuzzle.LowSimilarityThreshold, "Images don't match");
+            Assert.IsTrue(similarityImages < 0.3, "Images don't match");
         }
 
         [Then(@"I move to first page")]
@@ -155,7 +146,7 @@ namespace VkApi.Steps
             Log.Step("Using the API request, add a comment to the post with random text");
             var messageComment = RandomUtils.RandomString(LenghtMessage);
             ScenarioContext.Current["messageComment"] = messageComment;
-            vkApiUtils.ExecuteMessageActionWall(_userId, ScenarioContext.Current.Get<String>("idPost"), MethodEnum.WALL_CREATE_COMMENT.GetStringMapping(), _token, messageComment);
+            VkApiUtils.ExecuteMessageActionWall(_userId, ScenarioContext.Current.Get<String>("idPost"), VkMethodItems.WALL_CREATE_COMMENT.GetStringMapping(), _token, messageComment);
         }
 
         [Then(@"Not updating the page,comment from the right user should be added to the correct post")]
@@ -177,15 +168,15 @@ namespace VkApi.Steps
         public void ThenThroughTheRequestToTheAPILikeShouldBeSentFromTheRightUser()
         {
             Log.Step("Through the request to the API, make sure that the 'Like' was sent from the right user");
-            Assert.IsTrue(vkApiUtils.IsUserLikePost(_userId, ScenarioContext.Current.Get<String>("idPost"),
-                MethodEnum.LIKES_ISLIKED.GetStringMapping(), "post", _token), "No like from this user");
+            Assert.IsTrue(VkApiUtils.IsUserLikePost(_userId, ScenarioContext.Current.Get<String>("idPost"),
+                VkMethodItems.LIKES_ISLIKED.GetStringMapping(), "post", _token), "No like from this user");
         }
 
         [When(@"delete the created record")]
         public void WhenDeleteTheCreatedRecord()
         {
             Log.Step("Via the API request, delete the created record");
-            vkApiUtils.DeleteWallPost(_userId, ScenarioContext.Current.Get<String>("idPost"), MethodEnum.WALL_DELETE.GetStringMapping(), _token);
+            VkApiUtils.DeleteWallPost(_userId, ScenarioContext.Current.Get<String>("idPost"), VkMethodItems.WALL_DELETE.GetStringMapping(), _token);
         }
 
         [Then(@"Not updating the page, the entry should be deleted")]
@@ -197,26 +188,28 @@ namespace VkApi.Steps
         [Then(@"Delete created info by test")]
         public void ThenDeleteCreatedInfoByTest()
         {
-            vkApiUtils.DeletePhotoFromSite(MethodEnum.PHOTOS_DELETE.GetStringMapping(), _userId, photoInfo["photoId"], _token);
+            VkApiUtils.DeletePhotoFromSite(VkMethodItems.PHOTOS_DELETE.GetStringMapping(), _userId, photoInfo["photoId"], _token);
             mainF.DeletePhotoDownloadedFromVk(_pathToFolderResources, ScenarioContext.Current.Get<String>("downloadedFileName"));
         }
 
         [When(@"click to Extended configuration")]
         public void WhenClickToExtendedConfiguration()
         {
-            friendsForm = new FriendsForm();
+            var friendsForm = new FriendsForm();
             friendsForm.ClickToExtendedConfiguration();
         }
 
         [When(@"select '(.*)' region")]
         public void WhenSelectRegion(string region)
         {
+            var friendsForm = new FriendsForm();
             friendsForm.SelectRegion(region);
         }
 
         [When(@"enter the '(.*)' name of person")]
         public void WhenEnterTheNameOfPerson(string name)
         {
+            var friendsForm = new FriendsForm();
             friendsForm.EnterNameForSearch(name);
         }
 
@@ -229,7 +222,7 @@ namespace VkApi.Steps
         [When(@"click to user according existing photo '(.*)'")]
         public void WhenClickToUserAccordingExistingPhoto(string photo)
         {
-            sikuliActions.Click(photo);
+            _sikuliActions.Click(photo);
         }
 
         [Then(@"the user must be true")]
@@ -241,18 +234,17 @@ namespace VkApi.Steps
         [When(@"I click edit info about user button")]
         public void WhenIClickEditInfoAboutUserButton()
         {
-            mainF = new MainForm();
             mainF.ClickEditInfo();
         }
 
         [When(@"navigate to '(.*)' from right menu")]
         public void WhenNavigateToFromRightMenu(string item)
         {
-            editMainInfo = new EditMainInfo();
+            var editMainInfo = new EditMainInfo();
             editMainInfo.rightMenu.NavigateToMenuItem(item);
         }
 
-        [When(@"(fill|clear) info about (Intrests|Main|Contacts|Study|Carrier|Army|LivePosition) in fields and save this changing")]
+        [When(@"(fill|clear) info about '(.*)' in fields and save this changing")]
         public void WhenFillInfoInFiledsAndSaveThisChanging(string mode, string tab)
         {
             Thread.Sleep(1000);
@@ -260,37 +252,48 @@ namespace VkApi.Steps
             {
                 switch (tab)
                 {
-                    case "Intrests":
-                        {
-                            editIntrestsInfo = new EditIntrestsInfo();
-                            editIntrestsInfo.FillInfoUser("test");
-                        }
+                    case "Интересы":
+                    {
+                        var editIntrestsInfo = new EditIntrestsInfo();
+                        editIntrestsInfo.FillInfoUser("test");
+                    }
                         break;
-                    case "Main":
-                        {
-                            editMainInfo = new EditMainInfo();
-                            editMainInfo.FillInfoUser("test");
-                        }
+                    case "Основное":
+                            {
+                                var editMainInfo = new EditMainInfo();
+                                editMainInfo.FillInfoUser("test");
+                            }
                         break;
-                    case "Contacts":
-                        {
-                            editContactInfo = new EditContactInfo();
-                            editContactInfo.FillInfoUser("test");
-                        }
+                    case "Контакты":
+                    {
+                        var editContactInfo = new EditContactInfo();
+                        editContactInfo.FillInfoUser("test");
+                    }
                         break;
-                    case "Study":
-                        { editIntrestsInfo.FillInfoUser("test"); }
+                    case "Образование":
+                    {
+                        var editStudyInfo = new EditStudyInfo();
+                        editStudyInfo.FillInfoUser("test");
+                    }
                         break;
-                    case "Carrier":
-                        { editIntrestsInfo.FillInfoUser("test"); }
+                    case "Карьера":
+                    {
+                        var editCarrierInfo = new EditCarrierInfo();
+                        editCarrierInfo.FillInfoUser("test");
+                    }
                         break;
-                    case "Army":
-                        { editIntrestsInfo.FillInfoUser("test"); }
+                    case "Военная служба":
+                    {
+                        var editArmyInfo = new EditArmyInfo();
+                        editArmyInfo.FillInfoUser("test");
+                    }
                         break;
-                    case "LivePosition":
-                        { editIntrestsInfo.FillInfoUser("test"); }
+                    case "Жизненная позиция":
+                    {
+                        var editLivePositionInfo = new EditLivePositionInfo();
+                        editLivePositionInfo.FillInfoUser("test");
+                    }
                         break;
-                    default: break;
                 }
 
             }
@@ -298,36 +301,46 @@ namespace VkApi.Steps
             {
                 switch (tab)
                 {
-                    case "Intrests":
-                        {
-                            editIntrestsInfo = new EditIntrestsInfo();
-                            editIntrestsInfo.FillInfoUser(""); }
+                    case "Интересы":
+                    {
+                        var editIntrestsInfo = new EditIntrestsInfo();
+                        editIntrestsInfo.FillInfoUser(""); }
+                    break;
+                    case "Основное":
+                    {
+                        var editMainInfo = new EditMainInfo();
+                        editMainInfo.FillInfoUser("");
+                    }
                         break;
-                    case "Main":
-                        {
-                            editMainInfo = new EditMainInfo();
-                            editMainInfo.FillInfoUser("");
-                        }
+                    case "Контакты":
+                    {
+                        var editContactInfo = new EditContactInfo();
+                        editContactInfo.FillInfoUser("");
+                    }
+                    break;
+                    case "Образование":
+                    {
+                        var editStudyInfo = new EditStudyInfo();
+                        editStudyInfo.FillInfoUser("");
+                    }
                         break;
-                    case "Contacts":
-                        {
-                            editContactInfo = new EditContactInfo();
-                            editContactInfo.FillInfoUser("test");
-                        }
+                    case "Карьера":
+                    {
+                        var editCarrierInfo = new EditCarrierInfo();
+                        editCarrierInfo.FillInfoUser("");
+                    }
                         break;
-                    case "Study":
-                        { editIntrestsInfo.FillInfoUser("test"); }
+                    case "Военная служба":
+                    {
+                        var editArmyInfo = new EditArmyInfo();
+                        editArmyInfo.FillInfoUser("");
+                    }
                         break;
-                    case "Carrier":
-                        { editIntrestsInfo.FillInfoUser("test"); }
-                        break;
-                    case "Army":
-                        { editIntrestsInfo.FillInfoUser("test"); }
-                        break;
-                    case "LivePosition":
-                        { editIntrestsInfo.FillInfoUser("test"); }
-                        break;
-                    default:
+                    case "Жизненная позиция":
+                    {
+                        var editLivePositionInfo = new EditLivePositionInfo();
+                        editLivePositionInfo.FillInfoUser("");
+                    }
                         break;
                 }
             }
@@ -337,17 +350,13 @@ namespace VkApi.Steps
         [When(@"click show full information button")]
         public void WhenClickShowFullInformationButton()
         {
-            mainF = new MainForm();
             mainF.ClickShowFullInfo();
         }
 
-
-        [Then(@"all info (Intrests|Main|Contacts|Study|Carrier|Army|LivePosition) equals true info")]
+        [Then(@"all info '(.*)' equals true info")]
         public void ThenAllInfoEqualsTrueInfo(string value)
         {
             Thread.Sleep(2000);
         }
-
-
     }
 }

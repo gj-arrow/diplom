@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-public enum MethodEnum
+public enum VkMethodItems
 {
     [Description("wall.post")]
     WALL_POST,

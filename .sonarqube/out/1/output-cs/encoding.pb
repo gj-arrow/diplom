@@ -1,0 +1,11 @@
+H
+?D:\Other\diplom-master\SikuliSharp\AsyncTwoWayStreamsHandler.csutf-87
+.D:\Other\diplom-master\SikuliSharp\Patterns.csutf-84
++D:\Other\diplom-master\SikuliSharp\Point.csutf-8F
+=D:\Other\diplom-master\SikuliSharp\Properties\AssemblyInfo.csutf-85
+,D:\Other\diplom-master\SikuliSharp\Sikuli.csutf-8>
+5D:\Other\diplom-master\SikuliSharp\SikuliException.csutf-8H
+?D:\Other\diplom-master\SikuliSharp\SikuliFindFailedException.csutf-8<
+3D:\Other\diplom-master\SikuliSharp\SikuliRuntime.csutf-8I
+@D:\Other\diplom-master\SikuliSharp\SikuliScriptProcessFactory.csutf-8<
+3D:\Other\diplom-master\SikuliSharp\SikuliSession.csutf-8

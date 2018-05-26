@@ -1,172 +1,55 @@
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\OnlinerTestDemo.dll.config
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\OnlinerTestDemo.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\OnlinerTestDemo.pdb
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\ImapX.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\log4net.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\nunit-console-runner.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\nunit.core.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\nunit.core.interfaces.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\nunit.framework.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\nunit.util.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\Rhino.Mocks.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\WebDriver.dll
-C:\Users\a.hovrin\Downloads\smart\bin\Debug\WebDriver.Support.dll
-C:\Users\a.hovrin\Downloads\smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
-C:\Users\a.hovrin\Downloads\smart\obj\Debug\Smart.csproj.CoreCompileInputs.cache
-C:\Users\a.hovrin\Downloads\smart\obj\Debug\OnlinerTestDemo.dll
-C:\Users\a.hovrin\Downloads\smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\ImapX.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\log4net.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\nunit-console-runner.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\nunit.core.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\nunit.framework.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\nunit.util.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\WebDriver.dll
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\WebDriver.Support.dll
-D:\Work\Task1\TestVkApi\Smart\obj\Debug\Smart.csproj.CoreCompileInputs.cache
-D:\Work\Task1\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Work\Task1\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Work\Task1\TestVkApi\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Work\Task1\TestVkApi\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
-D:\Work\TestVkApi\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Work\TestVkApi\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Work\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Work\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Work\TestVkApi\Smart\bin\Debug\ImapX.dll
-D:\Work\TestVkApi\Smart\bin\Debug\log4net.dll
-D:\Work\TestVkApi\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Work\TestVkApi\Smart\bin\Debug\nunit-console-runner.dll
-D:\Work\TestVkApi\Smart\bin\Debug\nunit.core.dll
-D:\Work\TestVkApi\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Work\TestVkApi\Smart\bin\Debug\nunit.framework.dll
-D:\Work\TestVkApi\Smart\bin\Debug\nunit.util.dll
-D:\Work\TestVkApi\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Work\TestVkApi\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Work\TestVkApi\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Work\TestVkApi\Smart\bin\Debug\WebDriver.dll
-D:\Work\TestVkApi\Smart\bin\Debug\WebDriver.Support.dll
-D:\Work\TestVkApi\Smart\bin\Debug\WebDriver.xml
-D:\Work\TestVkApi\Smart\bin\Debug\WebDriver.Support.xml
-D:\Work\TestVkApi\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
-D:\Work\TestVkApi\Smart\obj\Debug\Smart.csproj.CoreCompileInputs.cache
-D:\Work\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Work\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\ImapX.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\log4net.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\nunit-console-runner.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\nunit.core.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\nunit.framework.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\nunit.util.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\WebDriver.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\WebDriver.Support.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\WebDriver.xml
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\bin\Debug\WebDriver.Support.xml
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask1\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\ImapX.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\log4net.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\nunit-console-runner.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\nunit.core.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\nunit.framework.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\nunit.util.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.xml
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.xml
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Student\Tasks\A1QA\Diplom\TestVkApi\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\ImapX.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\log4net.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\nunit-console-runner.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\nunit.core.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\nunit.framework.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\nunit.util.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.dll
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.xml
-D:\Student\Diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.xml
-D:\Student\Diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Student\Diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\ImapX.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\log4net.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\nunit-console-runner.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\nunit.core.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\nunit.framework.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\nunit.util.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\WebDriver.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\WebDriver.xml
-D:\Student\Diplom\diplom\TestVkApi\Smart\bin\Debug\WebDriver.Support.xml
-D:\Student\Diplom\diplom\TestVkApi\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
-D:\Student\Diplom\diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Student\Diplom\diplom\TestVkApi\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Student\Diplom\diplom\Smart\bin\Debug\Resources\chromedriver.exe
-D:\Student\Diplom\diplom\Smart\bin\Debug\Resources\geckodriver.exe
-D:\Student\Diplom\diplom\Smart\bin\Debug\OnlinerTestDemo.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\OnlinerTestDemo.pdb
-D:\Student\Diplom\diplom\Smart\bin\Debug\ImapX.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\log4net.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\nunit-console-runner.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\nunit.core.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\nunit.core.interfaces.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\nunit.framework.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\nunit.util.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\Rhino.Mocks.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\WebDriver.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\WebDriver.Support.dll
-D:\Student\Diplom\diplom\Smart\bin\Debug\WebDriver.xml
-D:\Student\Diplom\diplom\Smart\bin\Debug\WebDriver.Support.xml
-D:\Student\Diplom\diplom\Smart\obj\Debug\OnlinerTestDemo.dll
-D:\Student\Diplom\diplom\Smart\obj\Debug\OnlinerTestDemo.pdb
-D:\Student\Diplom\diplom\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
+D:\Other\diplom-master\Smart\bin\Debug\NUnit3.TestAdapter.dll
+D:\Other\diplom-master\Smart\bin\Debug\NUnit3.TestAdapter.pdb
+D:\Other\diplom-master\Smart\bin\Debug\nunit.engine.dll
+D:\Other\diplom-master\Smart\bin\Debug\nunit.engine.api.dll
+D:\Other\diplom-master\Smart\bin\Debug\Mono.Cecil.dll
+D:\Other\diplom-master\Smart\bin\Debug\Resources\chromedriver.exe
+D:\Other\diplom-master\Smart\bin\Debug\Resources\geckodriver.exe
+D:\Other\diplom-master\Smart\bin\Debug\OnlinerTestDemo.dll
+D:\Other\diplom-master\Smart\bin\Debug\OnlinerTestDemo.pdb
+D:\Other\diplom-master\Smart\bin\Debug\ImapX.dll
+D:\Other\diplom-master\Smart\bin\Debug\log4net.dll
+D:\Other\diplom-master\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Other\diplom-master\Smart\bin\Debug\nunit-console-runner.dll
+D:\Other\diplom-master\Smart\bin\Debug\nunit.core.dll
+D:\Other\diplom-master\Smart\bin\Debug\nunit.core.interfaces.dll
+D:\Other\diplom-master\Smart\bin\Debug\nunit.framework.dll
+D:\Other\diplom-master\Smart\bin\Debug\nunit.util.dll
+D:\Other\diplom-master\Smart\bin\Debug\Rhino.Mocks.dll
+D:\Other\diplom-master\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+D:\Other\diplom-master\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
+D:\Other\diplom-master\Smart\bin\Debug\WebDriver.dll
+D:\Other\diplom-master\Smart\bin\Debug\WebDriver.Support.dll
+D:\Other\diplom-master\Smart\bin\Debug\WebDriver.xml
+D:\Other\diplom-master\Smart\bin\Debug\WebDriver.Support.xml
+D:\Other\diplom-master\Smart\obj\Debug\Smart.csproj.CoreCompileInputs.cache
+D:\Other\diplom-master\Smart\obj\Debug\OnlinerTestDemo.dll
+D:\Other\diplom-master\Smart\obj\Debug\OnlinerTestDemo.pdb
+D:\Other\diplom-master\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\NUnit3.TestAdapter.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\NUnit3.TestAdapter.pdb
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit.engine.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit.engine.api.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\Mono.Cecil.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\Resources\chromedriver.exe
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\Resources\geckodriver.exe
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\OnlinerTestDemo.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\OnlinerTestDemo.pdb
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\ImapX.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\log4net.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit-console-runner.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit.core.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit.core.interfaces.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit.framework.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\nunit.util.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\Rhino.Mocks.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\ThoughtWorks.Selenium.Core.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\WebDriver.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\WebDriver.Support.dll
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\WebDriver.xml
+D:\Student\Diplom\diplom-master\Smart\bin\Debug\WebDriver.Support.xml
+D:\Student\Diplom\diplom-master\Smart\obj\Debug\Smart.csprojResolveAssemblyReference.cache
+D:\Student\Diplom\diplom-master\Smart\obj\Debug\OnlinerTestDemo.dll
+D:\Student\Diplom\diplom-master\Smart\obj\Debug\OnlinerTestDemo.pdb

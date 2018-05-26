@@ -1,28 +1,6 @@
-D:\Work\ProbationTask2-master\SikuliSharp\bin\Debug\SikuliSharp.dll
-D:\Work\ProbationTask2-master\SikuliSharp\bin\Debug\SikuliSharp.pdb
-D:\Work\ProbationTask2-master\SikuliSharp\obj\Debug\SikuliSharp.csproj.CoreCompileInputs.cache
-D:\Work\ProbationTask2-master\SikuliSharp\obj\Debug\SikuliSharp.dll
-D:\Work\ProbationTask2-master\SikuliSharp\obj\Debug\SikuliSharp.pdb
-D:\Work\ProbationTask2-master\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache
-D:\Work\ProbationTask2\SikuliSharp\bin\Debug\SikuliSharp.dll
-D:\Work\ProbationTask2\SikuliSharp\bin\Debug\SikuliSharp.pdb
-D:\Work\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache
-D:\Work\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.csproj.CoreCompileInputs.cache
-D:\Work\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.dll
-D:\Work\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.pdb
-D:\Work\a.hovrin\ProbationTask2\SikuliSharp\bin\Debug\SikuliSharp.dll
-D:\Work\a.hovrin\ProbationTask2\SikuliSharp\bin\Debug\SikuliSharp.pdb
-D:\Work\a.hovrin\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache
-D:\Work\a.hovrin\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.csproj.CoreCompileInputs.cache
-D:\Work\a.hovrin\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.dll
-D:\Work\a.hovrin\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.pdb
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask2\ProbationTask2\SikuliSharp\bin\Debug\SikuliSharp.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask2\ProbationTask2\SikuliSharp\bin\Debug\SikuliSharp.pdb
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask2\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask2\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.dll
-D:\Student\Tasks\A1QA\A1QA probation\ProbationTask2\ProbationTask2\SikuliSharp\obj\Debug\SikuliSharp.pdb
-D:\Student\Diplom\diplom\SikuliSharp\bin\Debug\SikuliSharp.dll
-D:\Student\Diplom\diplom\SikuliSharp\bin\Debug\SikuliSharp.pdb
-D:\Student\Diplom\diplom\SikuliSharp\obj\Debug\SikuliSharp.dll
-D:\Student\Diplom\diplom\SikuliSharp\obj\Debug\SikuliSharp.pdb
-D:\Student\Diplom\diplom\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache
+D:\Other\diplom-master\SikuliSharp\bin\Debug\SikuliSharp.dll
+D:\Other\diplom-master\SikuliSharp\bin\Debug\SikuliSharp.pdb
+D:\Other\diplom-master\SikuliSharp\obj\Debug\SikuliSharp.csproj.CoreCompileInputs.cache
+D:\Other\diplom-master\SikuliSharp\obj\Debug\SikuliSharp.dll
+D:\Other\diplom-master\SikuliSharp\obj\Debug\SikuliSharp.pdb
+D:\Other\diplom-master\SikuliSharp\obj\Debug\SikuliSharp.csprojResolveAssemblyReference.cache

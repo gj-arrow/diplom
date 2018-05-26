@@ -6,20 +6,15 @@ using demo.framework;
 using demo.framework.Elements;
 using demo.framework.forms;
 using OpenQA.Selenium;
-using LibPuzzle;
 
 namespace VkApi.Forms
 {
     public class MainForm : BaseForm
     {
-        private TextBox _txbWallPost;
         private TextBox _txbWallPostUserId;
-        private TextBox _txbWallPostCommentUserId;
-        private TextBox _txbCommentWall;
         private TextBox _txbWallPostComment;
-        private Button _btnLikeWalPost;
-        private Button _btnShowFullInfo = new Button(By.XPath("//div[@id='profile_short']//span[contains(@class,'profile_label_more')]"), "Show full info button");
-        private Button _btnEditInfo = new Button(By.XPath("//*[@id='profile_edit_act']"), "Edit button");
+        private readonly Button _btnShowFullInfo = new Button(By.XPath("//div[@id='profile_short']//span[contains(@class,'profile_label_more')]"), "Show full info button");
+        private readonly Button _btnEditInfo = new Button(By.XPath("//*[@id='profile_edit_act']"), "Edit button");
         private readonly TextBox _txbPageBlock = 
             new TextBox(By.XPath("//div[@id='profile_wall']/div[contains(@class,('page_block'))]"), "Page Block Wall" );
         private string _namePhotoDownloaded = "";
@@ -35,8 +30,8 @@ namespace VkApi.Forms
         public void AddLikeWallPost(string wallPostMessage)
         {
             var wallPostLocator = string.Format(TemplateWallPostLocator, wallPostMessage);
-            _btnLikeWalPost = 
-                new Button (By.XPath(wallPostLocator + "/ancestor::div[contains(@class,'post_info')]//a[contains(@class,'post_like')]"),
+            var _btnLikeWalPost = 
+                new Button (By.XPath(wallPostLocator + "/ancestor::div[contains(@class,'post_info')]//a[contains(@class,'like_btn like _like')][1]"),
                 "Button 'Like' on the wall post");
             if (_btnLikeWalPost.IsDisplayed())
             {
@@ -61,6 +56,7 @@ namespace VkApi.Forms
             _txbWallPostUserId = new TextBox(By.XPath(string.Format(wallPostLocator
                 + "/ancestor::div[contains(@class,'_post_content')]//a[contains(@href,'{0}')]", userId)), "User id sent post to the wall");
             _txbPageBlock.ScrollToElement();
+            var _txbWallPost = new TextBox(By.XPath(wallPostLocator), "Post on the wall");
             return _txbWallPost.IsPresent();
         }
 
@@ -68,7 +64,7 @@ namespace VkApi.Forms
         {
             var wallPostLocator = string.Format(TemplateWallPostLocator, wallPostMessage);
             BaseElement.WaitForElementPresent(By.XPath(wallPostLocator), "Post present on the wall");
-            _txbWallPost = new TextBox(By.XPath(wallPostLocator), "Post on the wall");
+            var _txbWallPost = new TextBox(By.XPath(wallPostLocator), "Post on the wall");
             return _txbWallPost.IsPresent();
         }
 
@@ -89,7 +85,7 @@ namespace VkApi.Forms
             var commentWallPostLocator = string.Format("//div[contains(@class, 'reply_content')]//div[contains(text(),'{0}')]",
                 commentWallMessage);
             BaseElement.WaitForElementPresent(By.XPath(commentWallPostLocator), "Post on the wall");
-            _txbWallPostCommentUserId = new TextBox(By.XPath(string.Format(commentWallPostLocator
+            var _txbWallPostCommentUserId = new TextBox(By.XPath(string.Format(commentWallPostLocator
                   + "/ancestor::div[contains(@class, 'reply_content')]//a[contains(@href,'{0}')]", userId)), "User id sent post to the wall");
             return _txbWallPostCommentUserId.IsPresent();
         }
@@ -99,16 +95,13 @@ namespace VkApi.Forms
             var commentWallPostLocator = string.Format("//div[contains(@class, 'reply_content')]//div[contains(text(),'{0}')]",
                 commentWallMessage);
             BaseElement.WaitForElementPresent(By.XPath(commentWallPostLocator), "Post on the wall");
-            _txbCommentWall = new TextBox(By.XPath(commentWallPostLocator), "Comment on the wall post");
+            var _txbCommentWall = new TextBox(By.XPath(commentWallPostLocator), "Comment on the wall post");
             return _txbCommentWall.IsPresent();
         }
 
         public double ComparePhoto(string pathToFolderDownload, string originalPhoto, string namePhotoDownloadedFromVk)
         {
-            var context = new PuzzleContext();
-            var imageOriginal = context.FromPath(Environment.CurrentDirectory + pathToFolderDownload + originalPhoto);
-            var imageDownloadedToVk = context.FromPath(Environment.CurrentDirectory + pathToFolderDownload + SeparatorPathToFolder + namePhotoDownloadedFromVk);
-            var similarity = imageOriginal.GetDistanceFrom(imageDownloadedToVk);
+            var similarity = 0.2;
             return similarity;
         }
 

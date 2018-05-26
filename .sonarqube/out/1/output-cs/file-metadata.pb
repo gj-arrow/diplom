@@ -1,0 +1,12 @@
+A
+?D:\Other\diplom-master\SikuliSharp\AsyncTwoWayStreamsHandler.cs0
+.D:\Other\diplom-master\SikuliSharp\Patterns.cs-
++D:\Other\diplom-master\SikuliSharp\Point.cs?
+=D:\Other\diplom-master\SikuliSharp\Properties\AssemblyInfo.cs.
+,D:\Other\diplom-master\SikuliSharp\Sikuli.cs7
+5D:\Other\diplom-master\SikuliSharp\SikuliException.csA
+?D:\Other\diplom-master\SikuliSharp\SikuliFindFailedException.cs5
+3D:\Other\diplom-master\SikuliSharp\SikuliRuntime.csB
+@D:\Other\diplom-master\SikuliSharp\SikuliScriptProcessFactory.cs5
+3D:\Other\diplom-master\SikuliSharp\SikuliSession.csY
+UC:\Users\a.hovrin\AppData\Local\Temp\.NETFramework,Version=v4.6.AssemblyAttributes.cs

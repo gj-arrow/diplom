@@ -7,7 +7,6 @@ namespace VkApi.Menu
 {
     public class EditInfoMenu : BaseForm
     {
-        private  Link _linkMenuItem;
         private const string TemplateMenuLocator = "//*[@id='narrow_column']/div//a/span[contains(text(),'{0}')]";
 
         public EditInfoMenu() : base(By.XPath("//ol"),
@@ -17,10 +16,10 @@ namespace VkApi.Menu
 
         public void NavigateToMenuItem(string menuItem)
         {
-            _linkMenuItem = new Link(
+            var linkMenuItem = new Link(
                 By.XPath(string.Format(TemplateMenuLocator, menuItem)),
                 "Edit info menu item:" + menuItem);
-            _linkMenuItem.Click();
+            linkMenuItem.Click();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace demo.framework
 {
-    public class RunConfigurator
+    public static class RunConfigurator
     {   
         private static XmlDocument xmlDoc = new XmlDocument(); // Create an XML document object
             

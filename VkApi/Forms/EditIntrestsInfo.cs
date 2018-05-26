@@ -16,14 +16,7 @@ namespace VkApi.Forms
         private readonly TextBox _txbActivities = new TextBox(By.Id("pedit_interests_activities"), "Acivities");
         private readonly TextBox _txbIntrests = new TextBox(By.Id("pedit_interests_interests"), "Intrests");
         private readonly TextBox _txbFavouriteMusic = new TextBox(By.Id("pedit_interests_music"), "FavouriteMusic");
-        private TextBox _txbFavouriteMovies = new TextBox(By.Id("pedit_interests_movies"), "FavouriteMovies");
-        private TextBox _txbFavouriteTV;
-        private TextBox _txbFavouriteBooks;
-        private TextBox _txbFavouriteGames;
-        private TextBox _txbFavouriteAbout;
-        private TextBox _txbFavouriteQuotes;
-        private Button _btnSave;
-        public EditInfoMenu rightMenu = new EditInfoMenu();
+        private readonly TextBox _txbFavouriteMovies = new TextBox(By.Id("pedit_interests_movies"), "FavouriteMovies");
 
         public EditIntrestsInfo()
             : base(By.ClassName("page_block_header"), "Friends Page")
@@ -39,20 +32,20 @@ namespace VkApi.Forms
                 _txbFavouriteMovies.ScrollToElement();
                 Thread.Sleep(700);
                 _txbFavouriteMovies.SetText(text);
-                _txbFavouriteTV = new TextBox(By.Id("pedit_interests_tv"), "FavouriteTv");
+                var _txbFavouriteTV = new TextBox(By.Id("pedit_interests_tv"), "FavouriteTv");
                 _txbFavouriteTV.SetText(text);
-                _txbFavouriteBooks = new TextBox(By.Id("pedit_interests_books"), "FavouriteBooks");
+                var _txbFavouriteBooks = new TextBox(By.Id("pedit_interests_books"), "FavouriteBooks");
                 _txbFavouriteBooks.SetText(text);
                 Thread.Sleep(700);
-                _txbFavouriteGames = new TextBox(By.Id("pedit_interests_games"), "FavouriteGames");
+                var _txbFavouriteGames = new TextBox(By.Id("pedit_interests_games"), "FavouriteGames");
                 _txbFavouriteGames.ScrollToElement();
                 _txbFavouriteGames.SetText(text);
-                _txbFavouriteAbout = new TextBox(By.Id("pedit_interests_about"), "FavouriteAbout");
+                var _txbFavouriteAbout = new TextBox(By.Id("pedit_interests_about"), "FavouriteAbout");
                 _txbFavouriteAbout.SetText(text);
-                _txbFavouriteQuotes = new TextBox(By.Id("pedit_interests_quotes"), "FavouriteQuotes");
+                var _txbFavouriteQuotes = new TextBox(By.Id("pedit_interests_quotes"), "FavouriteQuotes");
                 _txbFavouriteQuotes.SetText(text);
                 Thread.Sleep(500);
-                _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
+                var _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
                 if (_btnSave.IsDisplayed())
                 {
                     _btnSave.Click();
@@ -67,20 +60,20 @@ namespace VkApi.Forms
                 _txbFavouriteMovies.ScrollToElement();
                 Thread.Sleep(700);
                 _txbFavouriteMovies.Clear();
-                _txbFavouriteTV = new TextBox(By.Id("pedit_interests_tv"), "FavouriteTv");
+                var _txbFavouriteTV = new TextBox(By.Id("pedit_interests_tv"), "FavouriteTv");
                 _txbFavouriteTV.Clear();
-                _txbFavouriteBooks = new TextBox(By.Id("pedit_interests_books"), "FavouriteBooks");
+                var _txbFavouriteBooks = new TextBox(By.Id("pedit_interests_books"), "FavouriteBooks");
                 _txbFavouriteBooks.Clear();
                 Thread.Sleep(700);
-                _txbFavouriteGames = new TextBox(By.Id("pedit_interests_games"), "FavouriteGames");
+                var _txbFavouriteGames = new TextBox(By.Id("pedit_interests_games"), "FavouriteGames");
                 _txbFavouriteGames.ScrollToElement();
                 _txbFavouriteGames.Clear();
-                _txbFavouriteAbout = new TextBox(By.Id("pedit_interests_about"), "FavouriteAbout");
+                var _txbFavouriteAbout = new TextBox(By.Id("pedit_interests_about"), "FavouriteAbout");
                 _txbFavouriteAbout.Clear();
-                _txbFavouriteQuotes = new TextBox(By.Id("pedit_interests_quotes"), "FavouriteQuotes");
+                var _txbFavouriteQuotes = new TextBox(By.Id("pedit_interests_quotes"), "FavouriteQuotes");
                 _txbFavouriteQuotes.Clear();
                 Thread.Sleep(500);
-                _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
+                var _btnSave = new Button(By.XPath("//button[contains(@class, 'flat_button button_big_width')]"), "Save button");
                 if (_btnSave.IsDisplayed())
                 {
                     _btnSave.Click();

@@ -23,7 +23,6 @@ namespace demo.framework
         private static string _browserName = Environment.GetEnvironmentVariable("Browser");
         public static IWebDriver SetupBrowser()
         {
-            var a = System.IO.Path.GetFullPath(DriverPath);
             String browserName = string.IsNullOrEmpty(_browserName) ? Configuration.GetBrowser().ToLower() : _browserName.ToLower();
             if (browserName == "chrome")
             {

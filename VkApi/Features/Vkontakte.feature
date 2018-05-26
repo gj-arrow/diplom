@@ -1,25 +1,12 @@
 ﻿Feature: Vkontakte
 
-Scenario Outline: User log in 
-	Given I navigate to site
-		When I enter '<Login>' login and '<Password>' password
-		And I click button 'Войти' 
-			Then I stay on the page with '<NameOfTitle>' title
-Examples:
-| NameOfTitle         | Password                                    | Login                    |
-| Добро пожаловать    |                                             |                          |
-| Добро пожаловать    | 1qwawerxtcy                                 |                          |
-| Добро пожаловать    |                                             | trhfdgchbjk              |
-| Вход                | dfxcgfghlhkgfxbfcngvhbvvjcfxfxhxgfxgxhgfxhf | hghkfhfyf76of8fff        |
-| Вход                | hghkfhfyf76of8fff                           | hghkfhfyf76of8fff        |
-| Тестировщик Отбогов | PuV6j_.2&amp;$m9h?UY                        | autoperftester@gmail.com |
-
-Scenario: Add and Edit post with attach uploaded image through api
-	Given I navigate to site
-
-		When I enter 'autoperftester@gmail.com' login and 'PuV6j_.2&amp;$m9h?UY' password
+Background: 
+		Given I navigate to site
+		When I enter ' autoperftester@gmail.com ' login and 'PuV6j_.2&amp;$m9h?UY' password
 		And I click button 'Войти' 
 			Then I move to user profile page
+
+Scenario: Add and Edit post with attach uploaded image through api
 
 		When I navigate to 'Моя Страница'
 		And Create post with randomly generated text on the wall and get the record id from the response
@@ -42,11 +29,6 @@ Scenario: Add and Edit post with attach uploaded image through api
 		And I click button 'Выйти'
 
 Scenario Outline: Serach user
-	Given I navigate to site
-
-		When I enter 'autoperftester@gmail.com' login and 'PuV6j_.2&amp;$m9h?UY' password
-		And I click button 'Войти' 
-			Then I move to user profile page
 
 		When I navigate to 'Друзья'
 		And click to Extended configuration
@@ -65,88 +47,32 @@ Examples:
 | sasha.jpg | Беларусь | Ховрин Александр |
 
 Scenario Outline: Add interests of user
-	Given I navigate to site
 
-		When I enter '<Login>' login and '<Password>' password
-		And I click button 'Войти' 
-			Then I move to user profile page
 		When I navigate to 'Моя Страница'
 		When I click edit info about user button
-		And navigate to 'Интересы' from right menu
-		And fill info about Intrests in fields and save this changing
+		And navigate to '<TabName>' from right menu
+		And fill info about '<TabName>' in fields and save this changing
 
 		When I navigate to 'Моя Страница'
 		And click show full information button 
-			Then all info Intrests equals true info
+			Then all info '<TabName>' equals true info
 
 		When I click edit info about user button
-		And navigate to 'Интересы' from right menu
-		And clear info about Intrests in fields and save this changing
+		And navigate to '<TabName>' from right menu
+		And clear info about '<TabName>' in fields and save this changing
 
 		When I navigate to 'Моя Страница'
 		And click show full information button 
-			Then all info Intrests equals true info
+			Then all info '<TabName>' equals true info
 		When I click profile menu
 		And I click button 'Выйти'
 
 Examples:
-| Password             | Login                    |
-| PuV6j_.2&amp;$m9h?UY | autoperftester@gmail.com |
-
-Scenario Outline: Add main info of user
-	Given I navigate to site
-
-		When I enter '<Login>' login and '<Password>' password
-		And I click button 'Войти' 
-			Then I move to user profile page
-		When I navigate to 'Моя Страница'
-		When I click edit info about user button
-		And navigate to 'Основное' from right menu
-		And fill info about Main in fields and save this changing
-
-		When I navigate to 'Моя Страница'
-		And click show full information button 
-			Then all info Main equals true info
-
-		When I click edit info about user button
-		And navigate to 'Основное' from right menu
-		And clear info about Main in fields and save this changing
-
-		When I navigate to 'Моя Страница'
-		And click show full information button 
-			Then all info Main equals true info
-		When I click profile menu
-		And I click button 'Выйти'
-
-Examples:
-| Password             | Login                    |
-| PuV6j_.2&amp;$m9h?UY | autoperftester@gmail.com |
-
-Scenario Outline: Add contact info of user
-	Given I navigate to site
-
-		When I enter '<Login>' login and '<Password>' password
-		And I click button 'Войти' 
-			Then I move to user profile page
-		When I navigate to 'Моя Страница'
-		When I click edit info about user button
-		And navigate to 'Контакты' from right menu
-		And fill info about Contacts in fields and save this changing
-
-		When I navigate to 'Моя Страница'
-		And click show full information button 
-			Then all info Contacts equals true info
-
-		When I click edit info about user button
-		And navigate to 'Контакты' from right menu
-		And clear info about Contacts in fields and save this changing
-
-		When I navigate to 'Моя Страница'
-		And click show full information button 
-			Then all info Contacts equals true info
-		When I click profile menu
-		And I click button 'Выйти'
-
-Examples:
-| Password             | Login                    |
-| PuV6j_.2&amp;$m9h?UY | autoperftester@gmail.com |
+| TabName           |
+| Интересы          |
+| Основное          |
+| Контакты          |
+| Образование       |
+| Карьера           |
+| Военная служба    |
+| Жизненная позиция |

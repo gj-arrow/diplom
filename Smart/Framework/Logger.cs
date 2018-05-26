@@ -10,7 +10,7 @@ namespace demo.framework
     public class Logger
     {
         private int count = 1;
-        private ILog logger;
+        private  readonly ILog logger;
         public Logger(ILog logger)
         {
             this.logger = logger;

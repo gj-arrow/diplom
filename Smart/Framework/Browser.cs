@@ -13,7 +13,7 @@ namespace demo.framework
 
     public class Browser : BaseEntity
     {
-        protected static Browser _browser;
+        protected static readonly Browser _browser;
         private static IWebDriver _driver;
        
         public static Browser GetInstance()
@@ -32,8 +32,6 @@ namespace demo.framework
         public static void WaitForPageToLoad()
         {
             var wait = new WebDriverWait(GetDriver(), TimeSpan.FromMilliseconds(Convert.ToDouble(Configuration.GetTimeout())));
-            try
-            {
                 wait.Until<Boolean>(waiting =>
                 {
                     try
@@ -46,10 +44,6 @@ namespace demo.framework
                         return false;
                     }
                 });
-            }
-            catch (AppDomainUnloadedException)
-            {
-            }
         }
 
     }
